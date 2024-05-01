@@ -1,3 +1,45 @@
+rust-quote (1.0.36-1) unstable; urgency=medium
+
+  * Team upload.
+  * Package quote 1.0.36 from crates.io using debcargo 2.6.1
+
+ -- Sylvestre Ledru <sylvestre@debian.org>  Wed, 01 May 2024 17:47:59 +0200
+
+rust-quote (1.0.35-1) unstable; urgency=medium
+
+  * Package quote 1.0.35 from crates.io using debcargo 2.6.1
+
+  [ Blair Noctis ]
+  * Team upload.
+  * Package quote 1.0.33 from crates.io using debcargo 2.6.0
+
+ -- Peter Michael Green <plugwash@debian.org>  Tue, 09 Jan 2024 22:18:17 +0000
+
+rust-quote (1.0.30-1) unstable; urgency=medium
+
+  * Team upload.
+  * Package quote 1.0.30 from crates.io using debcargo 2.6.0
+
+ -- Peter Michael Green <plugwash@debian.org>  Sun, 16 Jul 2023 13:48:30 +0000
+
+rust-quote (1.0.27-2) unstable; urgency=medium
+
+  * Team upload.
+  * Package quote 1.0.27 from crates.io using debcargo 2.6.0
+
+ -- Matthias Geiger <matthias.geiger1024@tutanota.de>  Tue, 13 Jun 2023 12:53:23 +0200
+
+rust-quote (1.0.27-1) experimental; urgency=medium
+
+  * Package quote 1.0.27 from crates.io using debcargo 2.6.0
+
+  [ Blair Noctis ]
+  * Team upload.
+  * Package quote 1.0.23 from crates.io using debcargo 2.6.0
+  * Collapse features
+
+ -- Matthias Geiger <matthias.geiger1024@tutanota.de>  Sat, 27 May 2023 13:43:31 +0200
+
 rust-quote (1.0.21-1) unstable; urgency=medium
 
   * Team upload.

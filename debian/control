@@ -4,17 +4,18 @@ Priority: optional
 Build-Depends: debhelper (>= 12),
  dh-cargo (>= 25),
  cargo:native <!nocheck>,
- rustc:native <!nocheck>,
+ rustc:native (>= 1.56) <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-proc-macro2-1+proc-macro-dev (>= 1.0.40-~~) <!nocheck>,
- librust-proc-macro2-1-dev (>= 1.0.40-~~) <!nocheck>
+ librust-proc-macro2-1+proc-macro-dev (>= 1.0.74-~~) <!nocheck>,
+ librust-proc-macro2-1-dev (>= 1.0.74-~~) <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Uploaders:
  Ximin Luo <infinity0@debian.org>,
  Wolfgang Silbermayr <wolfgang@silbermayr.at>
-Standards-Version: 4.5.1
+Standards-Version: 4.6.2
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/quote]
 Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/quote
+X-Cargo-Crate: quote
 Rules-Requires-Root: no
 
 Package: librust-quote-dev
@@ -22,34 +23,19 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-proc-macro2-1-dev (>= 1.0.40-~~)
-Recommends:
- librust-quote+proc-macro-dev (= ${binary:Version})
-Provides:
- librust-quote-1-dev (= ${binary:Version}),
- librust-quote-1.0-dev (= ${binary:Version}),
- librust-quote-1.0.21-dev (= ${binary:Version})
-Description: Quasi-quoting macro quote!(...) - Rust source code
- This package contains the source for the Rust quote crate, packaged by debcargo
- for use with cargo and dh-cargo.
-
-Package: librust-quote+proc-macro-dev
-Architecture: any
-Multi-Arch: same
-Depends:
- ${misc:Depends},
- librust-quote-dev (= ${binary:Version}),
- librust-proc-macro2-1+proc-macro-dev (>= 1.0.40-~~)
+ librust-proc-macro2-1+proc-macro-dev (>= 1.0.74-~~),
+ librust-proc-macro2-1-dev (>= 1.0.74-~~)
 Provides:
  librust-quote+default-dev (= ${binary:Version}),
- librust-quote-1+proc-macro-dev (= ${binary:Version}),
+ librust-quote+proc-macro-dev (= ${binary:Version}),
+ librust-quote-1-dev (= ${binary:Version}),
  librust-quote-1+default-dev (= ${binary:Version}),
- librust-quote-1.0+proc-macro-dev (= ${binary:Version}),
+ librust-quote-1+proc-macro-dev (= ${binary:Version}),
+ librust-quote-1.0-dev (= ${binary:Version}),
  librust-quote-1.0+default-dev (= ${binary:Version}),
- librust-quote-1.0.21+proc-macro-dev (= ${binary:Version}),
- librust-quote-1.0.21+default-dev (= ${binary:Version})
-Description: Quasi-quoting macro quote!(...) - feature "proc-macro" and 1 more
- This metapackage enables feature "proc-macro" for the Rust quote crate, by
- pulling in any additional dependencies needed by that feature.
- .
- Additionally, this package also provides the "default" feature.
+ librust-quote-1.0+proc-macro-dev (= ${binary:Version}),
+ librust-quote-1.0.36-dev (= ${binary:Version}),
+ librust-quote-1.0.36+default-dev (= ${binary:Version}),
+ librust-quote-1.0.36+proc-macro-dev (= ${binary:Version})
+Description: Quasi-quoting macro quote!(...) - Rust source code
+ Source code for Debianized Rust crate "quote"
