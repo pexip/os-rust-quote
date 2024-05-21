@@ -1,19 +1,19 @@
-Test-Command: /usr/share/cargo/bin/cargo-auto-test quote 1.0.21 --all-targets --all-features
+Test-Command: /usr/share/cargo/bin/cargo-auto-test quote 1.0.36 --all-targets --all-features
 Features: test-name=rust-quote:@
-Depends: dh-cargo (>= 18), librust-rustversion-1+default-dev, librust-trybuild-1+default-dev (>= 1.0.52-~~), librust-trybuild-1+diff-dev (>= 1.0.52-~~), @
+Depends: dh-cargo (>= 18), librust-rustversion-1+default-dev, librust-trybuild-1+default-dev (>= 1.0.66-~~), librust-trybuild-1+diff-dev (>= 1.0.66-~~), @
 Restrictions: allow-stderr, skip-not-installable, flaky
 
-Test-Command: /usr/share/cargo/bin/cargo-auto-test quote 1.0.21 --all-targets --no-default-features
+Test-Command: /usr/share/cargo/bin/cargo-auto-test quote 1.0.36 --all-targets
+Features: test-name=librust-quote-dev:default
+Depends: dh-cargo (>= 18), librust-rustversion-1+default-dev, librust-trybuild-1+default-dev (>= 1.0.66-~~), librust-trybuild-1+diff-dev (>= 1.0.66-~~), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test quote 1.0.36 --all-targets --no-default-features --features proc-macro
+Features: test-name=librust-quote-dev:proc-macro
+Depends: dh-cargo (>= 18), librust-rustversion-1+default-dev, librust-trybuild-1+default-dev (>= 1.0.66-~~), librust-trybuild-1+diff-dev (>= 1.0.66-~~), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test quote 1.0.36 --all-targets --no-default-features
 Features: test-name=librust-quote-dev:
-Depends: dh-cargo (>= 18), librust-rustversion-1+default-dev, librust-trybuild-1+default-dev (>= 1.0.52-~~), librust-trybuild-1+diff-dev (>= 1.0.52-~~), @
-Restrictions: allow-stderr, skip-not-installable
-
-Test-Command: /usr/share/cargo/bin/cargo-auto-test quote 1.0.21 --all-targets 
-Features: test-name=librust-quote+proc-macro-dev:default
-Depends: dh-cargo (>= 18), librust-rustversion-1+default-dev, librust-trybuild-1+default-dev (>= 1.0.52-~~), librust-trybuild-1+diff-dev (>= 1.0.52-~~), @
-Restrictions: allow-stderr, skip-not-installable
-
-Test-Command: /usr/share/cargo/bin/cargo-auto-test quote 1.0.21 --all-targets --no-default-features --features proc-macro
-Features: test-name=librust-quote+proc-macro-dev:proc-macro
-Depends: dh-cargo (>= 18), librust-rustversion-1+default-dev, librust-trybuild-1+default-dev (>= 1.0.52-~~), librust-trybuild-1+diff-dev (>= 1.0.52-~~), @
+Depends: dh-cargo (>= 18), librust-rustversion-1+default-dev, librust-trybuild-1+default-dev (>= 1.0.66-~~), librust-trybuild-1+diff-dev (>= 1.0.66-~~), @
 Restrictions: allow-stderr, skip-not-installable
