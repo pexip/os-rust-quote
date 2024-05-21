@@ -17,7 +17,7 @@ Standards-Version: 4.5.1
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/quote]
 Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/quote
 Rules-Requires-Root: no
-XS-Pexip-Upstream: http://deb.debian.org/debian/ bookworm
+XS-Pexip-Upstream: http://deb.debian.org/debian/ trixie
 
 Package: librust-quote-dev
 Architecture: any
