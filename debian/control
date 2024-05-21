@@ -8,14 +8,16 @@ Build-Depends: debhelper (>= 12),
  libstd-rust-dev <!nocheck>,
  librust-proc-macro2-1+proc-macro-dev (>= 1.0.40-~~) <!nocheck>,
  librust-proc-macro2-1-dev (>= 1.0.40-~~) <!nocheck>
-Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
-Uploaders:
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+XSBC-Pexip-Original-Uploaders:
  Ximin Luo <infinity0@debian.org>,
  Wolfgang Silbermayr <wolfgang@silbermayr.at>
 Standards-Version: 4.5.1
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/quote]
 Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/quote
 Rules-Requires-Root: no
+XS-Pexip-Upstream: http://deb.debian.org/debian/ bookworm
 
 Package: librust-quote-dev
 Architecture: any
