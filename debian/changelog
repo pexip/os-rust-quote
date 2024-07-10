@@ -1,3 +1,9 @@
+rust-quote (1.0.36-1+pexip24u2) pexip; urgency=medium
+
+  * Rebuild with rustc 1.79
+
+ -- Huw Jones <huw@pexip.com>  Wed, 10 Jul 2024 16:11:16 +0100
+
 rust-quote (1.0.36-1+pexip24u1) pexip; urgency=medium
 
   * New upstream release
